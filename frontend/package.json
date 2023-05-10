@@ -1,0 +1,23 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --port 3010",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "7.0.96",
+    "axios": "^1.4.0",
+    "roboto-fontface": "*",
+    "tiny-emitter": "^2.1.0",
+    "vue": "^3.2.0",
+    "vuetify": "^3.0.0",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.3",
+    "vite": "^4.3.3",
+    "vite-plugin-vuetify": "^1.0.0"
+  }
+}
