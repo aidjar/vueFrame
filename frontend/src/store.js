@@ -9,13 +9,24 @@ const useMessageStore = defineStore('msgStr', {
    
     actions:{
         async add(msg) {
-            let data =  (await axios.post('http://127.0.0.1:3010/messages', {"message": msg})).data;
-            this.messages.push(data.message);
+            try{
+                let data =  (await axios.post('http://127.0.0.1:3010/messages', {"message": msg}))
+                .data;
+                this.messages.push(data.message);
+            } catch (error) {
+                this.messages.push(msg);
+                console.log(error);
+            }
+            
         },
 
         async fetch(){
-            let data = (await (axios.get('http://127.0.0.1:3010/messages'))).data;
-            data.forEach(e=> this.messages.push(e));
+            try{
+                let data = (await (axios.get('http://127.0.0.1:3010/messages'))).data;
+                data.forEach(e=> this.messages.push(e));
+            } catch (error){
+                console.log(error);
+            }
         },
     },      
 });
