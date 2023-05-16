@@ -1,12 +1,44 @@
-yarn create vuetify
-yarn add vite
-npm install axios
+# default
 
-install VS extension colonize for this:
-Shift+Enter Insert semicolon at the end of line and continue on the same line
-Alt+Enter Insert semicolon at the end of line and continue on the new line
-Ctrl+Alt+Enter Insert semicolon and stay at the same position
+## Project setup
 
-yarn dev - to run front
+```
+# yarn
+yarn
 
-npm install vuex --save
+# npm
+npm install
+
+# pnpm
+pnpm install
+```
+
+### Compiles and hot-reloads for development
+
+```
+# yarn
+yarn dev
+
+# npm
+npm run dev
+
+# pnpm
+pnpm dev
+```
+
+### Compiles and minifies for production
+
+```
+# yarn
+yarn build
+
+# npm
+npm run build
+
+# pnpm
+pnpm build
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://vitejs.dev/config/).

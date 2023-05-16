@@ -10,17 +10,16 @@
   
 <script>
 import axios from 'axios';
+import useMessageStore from '../store.js'
 export default {
     data: () => ({
         messageBody:"",
     }),
     methods:{
         submit(){
-            let msg;
+            let msg = this.messageBody; 
             try{
-                // emitter.emit('newMessage', this.messageBody);
-                msg = ((axios.post('http://127.0.0.1:3000/messages', {"message": this.messageBody})).data).message;
-                this.$store.state.messages.push(msg);
+                useMessageStore().add(msg);
             } catch(error){
                 console.log(msg)
                 console.log(error);

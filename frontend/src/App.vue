@@ -1,15 +1,13 @@
 <template>
   <v-app>
     <v-main>
-      <br>
-      <NewMessage/>
-      <br>
-      <Messages />
+      <NewMessage />
+      <Message />
     </v-main>
   </v-app>
 </template>
 
 <script setup>
-  import Messages from '@/components/Messages.vue'
-  import NewMessage from './components/NewMessage.vue';
+  import Message from '@/components/Message.vue';
+  import NewMessage from '@/components/newMessage.vue';
 </script>
