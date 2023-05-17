@@ -9,7 +9,6 @@
 </template>
   
 <script>
-import axios from 'axios';
 import useMessageStore from '../store.js'
 export default {
     data: () => ({
